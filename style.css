@@ -1,0 +1,101 @@
+/* The first several elements that are styled are really just for the purpose of having */
+
+/* Border-box sizing, Default to a sans-serif font throughout */
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: serif;
+}
+
+/* Black background color */
+
+body {
+    background-color: black;
+    color: white;
+}
+
+/* put everything inside a wrapper */
+
+#wrapper {
+    /* width: 800px;*/
+    max-width: 90%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-top: 0;
+    min-height: 100vh;
+}
+
+#grid {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(11, 100px);
+    justify-content: space-around;
+}
+
+.row {
+    padding-top: 25px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item {
+    border-radius: 10px;
+    text-align: center;
+    background-color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top:10px;
+    margin: 20px;
+    transition: 0.2s;
+}
+
+.label {
+    font-size: 3rem;
+    font-style: italic;
+    color:rgb(210,205, 207);
+}
+
+
+.question {
+    font-size: 30px;
+    color: white;
+}
+
+.answer {
+    font-size: 40px;
+    color: pink;
+}
+
+.active {
+    box-shadow: 0 0 35px white;
+}
+
+.hidden {
+    display: none;
+}
+
+.heighttxt {
+    height: 45px;
+    font-size: 35px;
+}
+
+#result {
+    color: yellow;
+    font-size: 45px;
+}
+
+#image {
+    height: 100px;
+    width: 100px;
+}
+
